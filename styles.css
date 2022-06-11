@@ -1,0 +1,68 @@
+
+
+img {
+
+ width: 90vw;
+ height: 50vh;
+ align-items: center;
+ border-radius: 5px;
+ box-shadow: 5px;
+ }
+
+.one{
+ background: blue;
+ transform: translateX(50%);
+}
+.two{
+ background: green;
+ transform: skewX(40deg);
+
+}
+.three{
+ background: yellow;
+ transition-property: background,border-radius;
+ transition-duration: 4s; 
+ transition-delay: 2s;
+}
+.three:hover{
+ border-radius: 50%}
+
+ .transition{
+  background: goldenrod;
+  transition: all 2s linear;
+ }
+ .transition:hover{
+  background: greenyellow;
+  transform: translateX(200px);
+ }
+ .animation{
+  background: red;
+  animation-name: move;
+  animation-duration: 10s;
+  animation-iteration-count: 2;
+ }
+@keyframes move{
+0% {
+ transform: translateX(10px);
+
+}
+
+50% {
+ transform: translateX(100px);
+ background: red;
+}
+
+75% {
+ transform: translateX(200px);
+ background: grey;
+}
+
+100% {
+ transform: translateX(-200px);
+ background: purple;
+}
+}
+body {
+ background-image: url(./images/backgro.jpg);
+ background-repeat: repeat;
+}
